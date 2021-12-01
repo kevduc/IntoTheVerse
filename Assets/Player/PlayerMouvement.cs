@@ -73,13 +73,13 @@ public class PlayerMouvement : MonoBehaviour
         controller.Move(velocity * Time.deltaTime);
 
         // Loop y position (when player falls)
-        if (controller.transform.position.y < -20f)
-        {
-            controller.transform.position =
-                new Vector3(controller.transform.position.x,
-                    20f,
-                    controller.transform.position.z);
-            // Physics.SyncTransforms(); // could be needed https://forum.unity.com/threads/does-transform-position-work-on-a-charactercontroller.36149/
-        }
+        // if (controller.transform.position.y < -20f)
+        // {
+        //     controller.transform.position =
+        //         new Vector3(controller.transform.position.x,
+        //             20f,
+        //             controller.transform.position.z);
+        //     // Physics.SyncTransforms(); // could be needed https://forum.unity.com/threads/does-transform-position-work-on-a-charactercontroller.36149/
+        // }
     }
 }
